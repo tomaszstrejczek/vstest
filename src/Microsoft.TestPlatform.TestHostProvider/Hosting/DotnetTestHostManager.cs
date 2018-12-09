@@ -180,7 +180,7 @@ namespace Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Hosting
             EqtTrace.Verbose("DotnetTestHostmanager: Full path of dotnet.exe is {0}", startInfo.FileName);
 
             // .NET core host manager is not a shared host. It will expect a single test source to be provided.
-            var args = "exec";
+            var args = "";
             var sourcePath = sources.Single();
             var sourceFile = Path.GetFileNameWithoutExtension(sourcePath);
             var sourceDirectory = Path.GetDirectoryName(sourcePath);
